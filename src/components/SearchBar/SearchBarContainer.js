@@ -3,10 +3,18 @@ import React from "react";
 import "./SearchBar.css";
 
 const SearchBar = () => {
+  let style = {
+    display: 'flex',
+    alignItems: 'baseline',
+    justifyContent: 'space-around',
+    flexWrap: 'wrap',
+    width: '20%'
+  }
   return (
     <div className="search-bar-wrapper">
-      <div className="image-wrapper">
+      <div className="image-wrapper" style={style}>
         <i className="fab fa-instagram" />
+        <h2>InstaPix</h2>
       </div>
       <form className="search-form">
         <input
